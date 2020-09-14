@@ -35,7 +35,7 @@ export const Player: React.FC<Props> = ({
         id="title"
         weight="bold"
         size="title">
-        currently jamming to
+        Currently jamming to:
       </Text>
 
       <div className="now-playing-wrapper">
@@ -57,11 +57,11 @@ export const Player: React.FC<Props> = ({
             alignItems: "center",
             paddingTop: 8,
             paddingLeft: 4,
-            background: "rgb(0,0,0,.01)",
-            borderRadius: ".3rem",
+            background: "#000000",
+            borderRadius: "2px",
             margin: ".5rem 0",
             padding: ".5rem",
-            border: "1px solid rgb(0,0,0,.1)",
+            border: "1px solid #000000",
           }}>
           <img
             id="cover"
@@ -85,7 +85,7 @@ export const Player: React.FC<Props> = ({
 
             <Text
               id="artist"
-              color={!track ? "gray" : undefined}>
+              color={!track ? "white" : undefined}>
               {artist || "Nothing Currently :)"}
             </Text>
             {track && (
@@ -124,9 +124,8 @@ export const Player: React.FC<Props> = ({
           
           img:not([src]) {
             content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
-            border-radius: 6px;
+            border-radius: 2px;
             background: #FFF;
-            border: 1px solid #e1e4e8;
           }
           
           .progress-bar,
@@ -199,8 +198,8 @@ export const Player: React.FC<Props> = ({
             width: 100%;
             height: 4px;
             margin: -1px;
-            border: 1px solid #e1e4e8;
-            border-radius: 4px;
+            border: 1px solid #ffffff;
+            border-radius: 2px;
             overflow: hidden;
             padding: 2px;
             z-index: 0;
@@ -215,7 +214,7 @@ export const Player: React.FC<Props> = ({
             width: 100%;
             height: 6px;
             transform-origin: left center;
-            background-color: #24292e;
+            background-color: #ffffff;
             animation: progress ${duration}ms linear;
             animation-delay: -${progress}ms;
           }
