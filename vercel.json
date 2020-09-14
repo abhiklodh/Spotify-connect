@@ -1,5 +1,5 @@
 {
-  "name": "andyruwruw/andyruwruw",
+  "name": "abhik/spotify-connect",
   "version": 2,
   "rewrites": [{ "source": "/(.*)", "destination": "/api/$1" }]
 }
