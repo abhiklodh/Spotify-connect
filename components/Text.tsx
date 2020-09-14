@@ -21,7 +21,7 @@ const families = {
 };
 
 const weights = {
-  default: 400,
+  default: 100,
   bold: 600,
 };
 
