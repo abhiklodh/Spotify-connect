@@ -28,8 +28,8 @@ export const TopPlayed: React.FC<Props> = ({
               className="title"
               weight="bold"
               size="title"
-              color="grey">
-              {term === 0 ? 'all time favorites' : term === 1 ? 'monthly favorites' : 'current favorites'}
+              color="black">
+              {term === 0 ? 'All time favorites' : term === 1 ? 'Monthly favorites' : 'Current favorites'}
             </Text>
 
             {list.map((track, trackIndex) => (
@@ -51,7 +51,7 @@ export const TopPlayed: React.FC<Props> = ({
 
                   <Text
                     className="artist"
-                    color="grey">
+                    color="white">
                     {track.artist}
                   </Text>  
                 </div>
@@ -81,20 +81,20 @@ export const TopPlayed: React.FC<Props> = ({
           
           img:not([src]) {
             content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
-            border-radius: 6px;
+            border-radius: 2px;
             background: #FFF;
-            border: 1px solid #e1e4e8;
+            border: 1px solid #ffffff;
           }
           
           .track {
             display: flex;
             align-items: center;
             max-width: 250px;
-            background: rgb(0,0,0,.01);
-            border-radius: .3rem;
+            background: #000000;
+            border-radius: 2px;
             margin: .5rem;
             padding: .5rem;
-            border: 1px solid rgb(0,0,0,.1);
+            border: 1px solid #000000;
           }
           
           .track .details {
