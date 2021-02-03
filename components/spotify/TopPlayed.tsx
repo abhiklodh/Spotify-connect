@@ -28,7 +28,7 @@ export const TopPlayed: React.FC<Props> = ({
               className="title"
               weight="bold"
               size="title"
-              color="black">
+              color="white">
               {term === 0 ? 'All time favorites' : term === 1 ? 'Monthly favorites' : 'Current favorites'}
             </Text>
 
